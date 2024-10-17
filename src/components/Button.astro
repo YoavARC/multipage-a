@@ -1,0 +1,18 @@
+---
+const {del = false }=Astro.props;
+
+---
+
+<div 
+    class="items-center space-x-1 transition-colors hover:bg-emerald-300 bg-blue-600 text-white  inline-flex rounded px-2"
+    class:list={{"bg-red-500 hover:bg-red-800": del}} 
+   >
+    <slot name="start-icon" />
+    
+    <slot name="text">  
+        Enviar
+    </slot>
+
+    <slot name="end-icon" />
+
+</div>

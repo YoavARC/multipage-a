@@ -17,20 +17,35 @@ const { title ="No Name" } = Astro.props;
 		<header class=  "h-20 bg-orange-400">
 
 		</header>
-		<menu class="flex bg-slate-400">   
-			<li>
-				<a href="/" class ="hover:bg-white/40 px-4 block"> inicio<a/>
+		<menu class="flex bg-slate-400">
+			<li><a href="/" class="hover:bg-white/30 px-4 block" >Inicio</a></li>
+			<li><a href="/quienes-somos" class="hover:bg-white/30 px-4 block" >Quienes somos</a></li>
+			<li class="h-full relative group">
+				<a href="" class="hover:bg-white/30 px-4 block">Organigrama</a>
+				<div class="absolute group-hover:block hidden bg-slate-600 w-60">
+					<a href="/organigrama" class="hover:bg-slate-800 block py-3 px-4 text-lg text-white">
+						Pagina principal
+					</a>
+					<a href="/organigrama/biografia" class="hover:bg-slate-800 block py-3 px-4 text-lg text-white">
+						Biografia
+					</a>
+				</div>
+				<li class="h-full relative group">
+					<a href="" class="hover:bg-white/30 px-4 block">Noticias</a>
+					<div class="absolute group-hover:block hidden bg-slate-600 w-60">
+						<a href="/noticias/clifford" class="hover:bg-slate-800 block py-3 px-4 text-lg text-white">
+							clifford
+						</a>
+						<a href="/noticias/rover" class="hover:bg-slate-800 block py-3 px-4 text-lg text-white">
+							rover
+						</a>
+						<a href="/noticias/spot" class="hover:bg-slate-800 block py-3 px-4 text-lg text-white">
+							spot
+												
+						</a>
+					</div>
 			</li>
-			
-			<li>
-				<a href="/quienes-somos"class ="hover:bg-white/40 px-4 block">Quienes somos</a>
-			</li>
-			<li>
-				<a href="/organigrama"class ="hover:bg-white/40 px-4 block">Organigrama</a>
-			</li>
-			<li>
-				<a href="/contacto"class ="hover:bg-white/40 px-4 block">Contacto</a>
-			</li>
+			<li><a href="/contacto" class="hover:bg-white/30 px-4 block" >Contacto</a></li>
 		</menu>
 
 
